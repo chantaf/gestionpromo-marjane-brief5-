@@ -1,1 +1,1 @@
-==> chef de rayon a changer le status de la promo à status1  et  le commentaire :commantaire1  action : update idpromotion:12  le: 2021-12-24  heures:16:44
+==> chef de rayon a changer le status de la promo à: status1  et  le commentaire :commantaire1  action : update idpromotion:12  le: 2021-12-24  heures:17:3

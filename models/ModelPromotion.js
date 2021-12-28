@@ -78,7 +78,7 @@ module.exports={
             if (err) throw err;
             fs.appendFileSync("journalisation.txt", `==> chef de rayon a changer le status de la promo à: ${status}  et  le commentaire :${commentaire}  action : update idpromotion:${id}  le: ${newdate}  heures:${heures}\n`, "UTF-8",{'flags': 'a+'});
 
-            var sql=`insert into journalisation(idpromotion,idresponsable,date,heures,statusanciene,statusnouuveau,commentaireanciene,commentairenouveau,action) VALUES (${id},1,'${newdate}','${heures}','${status}','${status}','${commentaire}','${commentaire}','update')`;
+            var sql=`insert into journalisation(idpromotion,idresponsable,date,heures,statusnouveau,commentairenouveau,action) VALUES (${id},1,'${newdate}','${heures}','${status}','${commentaire}','update')`;
             db.query(sql, function (err, data, fields) {
                   if (err) throw err;
             });
